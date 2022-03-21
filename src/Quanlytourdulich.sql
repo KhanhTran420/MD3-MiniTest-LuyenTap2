@@ -99,4 +99,5 @@ INSERT INTO TourBill(tourbillID, tourist_ID, customerbook_ID, status) VALUES
 
 
 SELECT cityName AS "Tên Thành Phố", COUNT(customerbookName) AS "Số Tour Book"  FROM City JOIN CustomerBook CB on City.cityID = CB.localtourCity_ID GROUP BY cityName;
-
+SELECT count(touristID)AS 'Số Tour Trong Tháng 3' from Tourist where month(startDate)=3;
+SELECT count(touristID)AS 'Số Tour Trong Tháng 3' from Tourist where month(endDate)=4;
